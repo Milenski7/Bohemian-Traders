@@ -1,0 +1,90 @@
+.grid3-item {
+  width: 49%;
+  height: 33rem;
+  background-image: url("./1.jpg");
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.grid3-item:hover {
+  background-color: rgba(0, 0, 0, 0.342);
+  background-blend-mode: overlay;
+}
+
+.grid3-item:hover .grid3-item-button {
+  display: block;
+}
+
+.grid3-item2 {
+  width: 49%;
+  height: 33rem;
+  background-image: url("./2.jpg");
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.grid3-item2:hover {
+  background-color: rgba(0, 0, 0, 0.342);
+  background-blend-mode: overlay;
+}
+
+.grid3-item2:hover .grid3-item-button2 {
+  display: block;
+}
+
+.grid3-item-button, .grid3-item-button2 {
+  display: none;
+  padding: 0.5rem;
+  font-size: 0.8rem;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: darkred;
+  color: white;
+  -webkit-box-shadow: 2px 2px 20px black;
+          box-shadow: 2px 2px 20px black;
+}
+
+@media only screen and (max-width: 841px) {
+  .grid {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 513px) {
+  .grid {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .grid3-item, .grid3-item2 {
+    width: 100%;
+    margin: 0.2rem 0 0.2rem 0;
+    border: 1px solid black;
+    -webkit-box-shadow: 2px 2px 2px black;
+            box-shadow: 2px 2px 2px black;
+    height: 15rem;
+  }
+  .grid3-item-button, .grid3-item-button2 {
+    display: block;
+  }
+}
+/*# sourceMappingURL=grid3.css.map */

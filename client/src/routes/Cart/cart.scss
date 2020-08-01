@@ -1,0 +1,111 @@
+.cart-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0 4rem 0;
+}
+
+.cart {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.cart-item {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 0 1rem 0;
+    border-bottom: 1px solid black;
+}
+
+.cart-item-image {
+    width: 10rem;
+    height: 10rem;
+    object-fit: contain;
+    margin: 0 0 1rem 0;
+}
+
+.product-right-quantity-container2 {
+    display: flex;
+    align-items: center;
+}
+.product-right-quantity-title2 {
+    font-size: 0.6rem;
+}
+
+.cart-item-title {
+    font-size: 0.8rem;
+    width: 25%;
+    text-align: center;
+}
+
+.cart-item-remove {
+    font-size: 0.7rem;
+    padding: 0.3rem;
+    border: none;
+    border-radius: 5px;
+    background-color: coral;
+    color: white;
+    cursor: pointer;
+}
+
+.no-item-in-cart {
+    width: 100%;
+    height: 15rem;
+    text-align: center;
+    line-height: 10rem;
+    vertical-align: center;
+}
+
+.cart-total {
+    width: 100%;
+    text-align: right;
+}
+
+@media only screen and (max-width: 1156px){
+    .cart-item {
+        flex-direction: column;
+    }
+    .product-right-quantity-container2 {
+        margin: 0.5rem 0 0.5rem 0;
+    }
+    .cart-item-price {
+        margin: 0.5rem 0 0.5rem 0;
+    }
+    .cart-item-total {
+        margin: 0.5rem 0 0.5rem 0;
+    }
+    .cart-item-remove {
+        margin: 0.5rem 0 0.5rem 0;
+    }
+    .cart-total {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 728px){
+    .cart-item-image {
+        width: 50%;
+        height: auto;
+    }
+    .cart-item-title {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 438px){
+    .cart-item-image {
+        width: 80%;
+    }
+    .no-item-in-cart {
+        line-height: normal;  
+        margin: 2rem 0 2rem 0;
+        height: auto;
+    }
+}

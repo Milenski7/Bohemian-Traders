@@ -1,0 +1,49 @@
+.historyLine-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0 2rem 0;
+}
+
+.historyLine {
+    width: 90%;
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+
+.historyLine-link {
+    text-decoration: none;
+    color: black;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    padding: 0.2rem;
+}
+
+.historyLine-separator {
+    padding: 0.2rem;
+}
+
+.historyLine-link-active {
+    text-decoration: none;
+    color: rgb(99, 99, 99);
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    padding: 0.2rem;
+    position: relative;
+}
+.historyLine-link-active::after {
+    content: "";
+    position: absolute;
+    border-bottom: 2px solid cyan;
+    bottom: 0;
+    left: 25%;
+    width: 50%;
+}
+
+.historyLine-link-active:hover::after {
+    width: 100%;
+    left: 0;
+    transition: width 0.2s linear;
+}

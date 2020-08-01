@@ -1,0 +1,38 @@
+.scroll-top-button {
+  position: fixed;
+  right: 1%;
+  bottom: 10%;
+  z-index: 700;
+  padding: 0.5rem;
+  font-size: 2.8rem;
+  border-radius: 5px;
+  background-color: rgba(255, 182, 193, 0.563);
+  -webkit-animation: fadeIn 0.3s linear;
+          animation: fadeIn 0.3s linear;
+  cursor: pointer;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.scroll-top-button:hover {
+  background-color: rgba(255, 182, 193, 0.877);
+}
+/*# sourceMappingURL=scrollTop.css.map */

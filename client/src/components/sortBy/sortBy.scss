@@ -1,0 +1,32 @@
+.sortBy-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 2rem 0;
+}
+
+.sortBy {
+    width: 90%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.sortBy-label {
+    margin: 0 0.5rem 0 0;
+    font-size: 0.8rem;
+}
+
+.sortBy-select {
+    border-radius: 5px;
+    outline: none;
+    padding: 0.2rem;
+    font-size: 0.8rem;
+}
+
+.sortBy-option {
+    font-size: 0.8rem;
+    padding: 0.2rem;
+}

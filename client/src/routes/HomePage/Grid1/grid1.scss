@@ -1,0 +1,102 @@
+.grid-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0 1rem 0;
+}
+
+.grid {
+    width: 60%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.grid-item {
+    width: 32%;
+    height: 20rem;
+    background: url("./1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    .grid-item:hover {
+        background-color: rgba(0, 0, 0, 0.226);
+        background-blend-mode: overlay;
+        .grid-item-button {
+            display: block;
+        }
+    }
+
+.grid-item2 {
+    width: 32%;
+    height: 20rem;
+    background-image: url("2.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.grid-item2:hover {
+    background-color: rgba(0, 0, 0, 0.226);
+    background-blend-mode: overlay;
+    .grid-item-button2 {
+        display: block;
+    }
+}
+
+.grid-item3 {
+    width: 32%;
+    height: 20rem;
+    background-image: url("3.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.grid-item3:hover {
+    background-color: rgba(0, 0, 0, 0.226);
+    background-blend-mode: overlay;
+    .grid-item-button3 {
+        display: block;
+    }
+}
+
+.grid-item-button, .grid-item-button2, .grid-item-button3 {
+    display: none;
+    padding: 0.5rem;
+    font-size: 0.7rem;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: darkred;
+    color: white;
+    box-shadow: 2px 2px 20px black;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 841px){
+    .grid {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 513px){
+    .grid {
+        flex-direction: column;
+    }
+    .grid-item, .grid-item2, .grid-item3 {
+        width: 100%;
+        margin: 0.2rem 0 0.2rem 0;
+        border: 1px solid black;
+        box-shadow: 2px 2px 2px black;
+    }
+    .grid-item-button, .grid-item-button2, .grid-item-button3 {
+        display: block;
+    }
+}

@@ -1,0 +1,138 @@
+.footer-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.footer {
+    width: 60%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0 1rem 0;
+}
+
+.footer-logo {
+    width: 30%;
+    height: 5rem;
+}
+
+.footer-center {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-center-list1 {
+    width: 48%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.footer-center-list2 {
+    width: 48%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-center-list1-header {
+    color: white;
+    font-size: 0.8rem;
+    font-weight: lighter;
+    margin: 1rem 0 0.5rem 0;
+}
+.footer-link {
+    text-decoration: none;
+    color: white;
+    font-size: 0.6rem;
+    margin: 0.15rem;
+}
+
+.footer-right {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-right-header {
+    font-size: 0.8rem;
+    color: white;
+    margin: 1rem 0 0.5rem 0;
+    font-weight: lighter;
+}
+
+.footer-right-social-container {
+    width: max-content;
+    display: flex;
+    justify-content: space-between;
+    margin: 0.5rem 0 0.5rem 0;
+}
+
+.footer-social-icon {
+    color: white;
+    cursor: pointer;
+    margin-right: 0.4rem;
+}
+
+.footer-right-header2 {
+    color: white;
+    font-size: 0.8rem;
+}
+
+.footer-right-payments {
+    width: 70%;
+}
+
+.footer-right-p {
+    font-size: 0.8rem;
+    color: white;
+    padding: 0.2rem;
+}
+
+@media only screen and (max-width: 933px){
+    .footer {
+        width: 95%;
+    }
+}
+
+@media only screen and (max-width: 645px){
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-center {
+        width: 95%;
+        flex-direction: column;
+    }
+    .footer-center-list1, .footer-center-list2 {
+       width: 100%;
+       align-items: center;
+       border-bottom: 0.5px solid white;
+       padding-bottom: 0.5rem;
+    }
+    .footer-right {
+        width: 100%;
+        align-items: center;
+    }
+    .footer-right-social-container {
+        width: 50%;
+        border-bottom: 0.5px solid white;
+        justify-content: center;
+        padding-bottom: 0.5rem;
+    }
+    .footer-right-payments {
+        width: 50%;
+        border-bottom: 0.5px solid white;
+        justify-content: center;
+        padding-bottom: 0.5rem;
+    }
+    .footer-logo {
+        width: 50%;
+    }
+}
